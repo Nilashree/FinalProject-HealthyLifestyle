@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="This page is privacy policy of HealthyLifeStyle.com">
+<title>
+Helathy Life Style-Game
+</title>
+
+
+<link rel="shortcut icon" href="images/favicon.ico">
+<link rel="stylesheet" href="mycss/mystyle.css" ><!--my uniqe css-->
+<link rel="stylesheet" href="gamecss/game_css.css" >
+<link href="print.css" rel="stylesheet" media="print"/>
+<link rel="stylesheet" href="mobile.css" type="text/css" media="screen and (max-width: 700px) and (min-width: 200px)" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script><!--jquerry libaray-->
+<script>
+$(document).ready(function(){//Sets the document ready.All methods go under this.This is to prevent any jQuery code from running
+                                            // before the document is finished loading (is ready).
+    
+	$("#rulesheading").click(function(){//Use of dollar shows that we are accessing jquerry.Inside the round brackets are selectors.Here we have selected element by id"rulesheading"
+        $("#rule1").fadeIn();//fadeIn is the jquerry effect.It is the action that should be taken  on the element. 
+        $("#rule2").fadeIn("slow");//This is the syntax for fadeIn. $(selector).fadeIn(speed,callback); 
+		                               //The optional speed parameter specifies the duration of the effect. It can take the following values: "slow", "fast", or milliseconds.
+
+                                         //The optional callback parameter is a function to be executed after the fading completes.The code has been referenced from W3cSchools.com
+		
+        $("#rule3").fadeIn(3000);
+    });
+});
+</script>
+</head>
+
+<body>
+<div>
+<header id="header">
+	<img  id="logo" src="images/logo.png" alt="logo"  width="240" height="120">
+	<img  id="name" src="images/name3.png" alt="logo"  >
+	
+	</header>
+
+	
+	<nav>
+	<ul class ="navbar">
+		<li><a href="home.html" >Home</a></li>
+	
+		<li><a href="http://ait616.com/nshiro2/project2/aboutus.html">About Us</a></li>
+		<li><a href="faq.html">FAQ</a></li>
+         <li><a href="nutrition.html">Nutrition</a></li>
+		 <li><a href="faceyoga.html">Faceyoga</a></li>
+		<li><a href="exercise.html">Exercise</a></li>
+		  <li><a class="active">Game</a></li>
+		
+	</ul> 
+	</nav>
+	
+<div class="container1">
+<div>
+	
+	 <img  style="padding-top:5px;" id="titleimage" src="images/game_title.png" alt="rock">
+	</div>
+	<div>
+	<h2 class="headings">Lets have some fun with healthy life style game</h2>
+      <h3  class="headings" style="color:orange;font-size:20px;font-weight:bold;">How to play</h3>
+      <ul   class="game_list" style="list-style:circle;">
+        <li style="font-size:20px;">You are palyer1.Chooses your  weapon choice of  Claorie food,Exercise and Fit Body.</li>
+        <li style="font-size:20px;">Computer is the palyer 2,that makes an weapon choice too.</li>
+        <li style="font-size:20px;">Based on chosen weapons ,the winner is decided.</li>
+      </ul>
+      <h4 id="rulesheading" style="color:blue;font-size:20px;font-weight:bold;text-decoration:underline;">Click here to understand the game rules!</h4>
+      <ul  class="game_list" style="list-style:circle;">
+        <li id="rule1" style="display:none;font-size:18px;">Calorie food are barrier for fit body,so in choice of Calorie food and Fit body.Calorie Food wins!</li>
+        <li id="rule2" style="display:none; font-size:20px;">Fit Body can do any exercise,So Fit Body wins in Choice of Fit body and exercise!</li>
+        <li id="rule3" style="display:none;font-size:20px;">Exercise burns calories so ,Exercise wins in choice of Exercise and Calorie Food!</li>
+      </ul>
+      <br/>
+	
+	
+	
+	
+      <p style="text-align:center; font-size:20px; font-weight:bold ;color:orange;">Choose Your Weapon</p>
+	  <div id=icons_div>
+	  <img class="icons" src="images/fitbody.png" alt="scissors">
+      <img class="icons" src="images/burger.png" alt="rock">
+      <img class="icons" src="images/exercise.jpg" alt="paper">
+      </div>
+      <p></p>
+    </div>
+	
+	<script src='app.js'></script>
+	
+</div>
+<div id="validationimage">
+<p>
+      <a href="http://validator.w3.org/check?uri=referer"><img
+          src="http://www.w3.org/Icons/valid-xhtml10"
+          alt="Valid XHTML 1.0!" height="31" width="88" /></a>
+    </p>
+</div>
+<div id="footerbar">
+	<ul>
+		<li><a href="contactus.html" >Contact US</a></li>
+	
+		<li><a href="links.html">Links</a></li>
+		<li><a href="privacy.html">PrivacyPolicy</a></li>
+         <li><a href="mysitemap.html">Sitemap</a></li> 
+		<li><a href="future.html">Future</a></li>
+	</ul> 
+	<ul class="sociallinks">
+						   <li><iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Ftowsonuniversity&width=95&layout=button&action=like&show_faces=true&share=true&height=65&appId" width="95" height="20" style="border:none;overflow:hidden"></iframe> <!--scrolling="no" frameborder="0" allowTransparency="true"--></li>
+						   <li><a target="_blank" class="twitter-share-button" href="https://twitter.com/intent/tweet?text=Great%20website&url=https%3A%2F%2Ftowson.edu&via=twitterdev&hashtags=university&related=twitterapi%2Ctwitter" style="border:none;overflow:hidden;padding-right:50 px;"> Twitter</a></li>
+						   <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+						   <li><a target="_blank" class="fa fa-instagram" href="https://www.instagram.com/towsonuniversity/"></a></li>
+						 </ul>
+	</div>
+	
+	
+ <footer id="footer">
+ 
+ 
+ 
+<p><b>email:enquire&#64;healthylife.com</b></p>
+  <p><b>Copyright &#169;Helathy Life Style.com</b></p>
+  
+ 
+</footer>
+
+</div>
+</body>
+</html>

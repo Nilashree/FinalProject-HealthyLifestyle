@@ -1,0 +1,119 @@
+#header
+{
+	margin-left:8%;
+	margin-right:8%;
+background-color:#EE7621;
+height:160px;
+overflow:hidden;
+
+}
+#logo
+{
+	position:absolute;
+	left:290px;
+	top:20px;
+}
+#name
+{position:absolute;
+	left:540px;
+padding-bottom:10px;
+padding-top:5px;
+padding-right:5px;
+height:155px;
+	}
+	#footer
+	{
+	margin-left:8%;
+	margin-right:8%;
+	
+
+background-color:#EE7621;
+height:120px;
+		text-align:center;	
+	}
+	
+	ul.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:gold;
+	margin-left:8%;
+	margin-right:8%;
+	
+}
+.mainbody
+{
+		background-color:#F0E68C;
+		margin-left:8%;
+	margin-right:8%;
+	
+}
+#content{
+	
+position:static;
+	margin-left:8%;
+	margin-right:8%;
+}
+ul.navbar li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+	font-weight:bold;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+	border-right:1em solid black;
+	background-color:#996633
+}
+
+ a:hover:not(.active) {
+    background-color:black;
+}
+ .active {
+background-color:#663300;
+}
+body
+{
+	background-color:black;
+}
+
+
+	
+
+
+
+#footerbar
+{
+	background-color:gold;
+	overflow:hidden;
+margin-left:8%;
+	margin-right:8%;
+	height:50px;
+	
+}
+#footerbar ul li{
+	display:inline;
+	 float: left;
+	list-style-type: none;
+}
+#footerbar li a{
+	text-decoration:underline;
+	background-color:gold;
+	border-right:1em solid gold;
+	color:black;
+}
+#footerbar .sociallinks li {
+        float: right;
+        color:green;
+    } 
+#footerbar 	.sociallinks li a {
+        display: block;
+        padding: 8px;
+        color: Blue;
+    }
+
+

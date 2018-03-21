@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="This page introduces to healthy habits,exercises and nutrition">
+<meta name="google-site-verification" content="LQOwdH8meEWRzU8TtMIsuaJLxUQifQDEok3KcQG8nOA" />
+<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+<link href="css/960.css" rel="stylesheet"/><!--960 Grid Framework-->
+	<link href="css/reset.css" rel="stylesheet"/>
+	<link href="css/text.css" rel="stylesheet"/>
+	<link href="css/style.css" rel="stylesheet"/>
+	<link rel="shortcut icon" href="http://ait616.com/nshiro2/project2/images/favicon.ico"><!---favicon>-->
+	<link href="print.css" rel="stylesheet" media="print"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="mobile.css" type="text/css" media="screen and (max-width: 700px) and (min-width: 200px)" />
+<title>
+Helathy Life Style
+</title>
+<style>
+
+
+
+
+</style>
+
+
+
+</head>
+
+<body onload="greet()">
+<p id="welcomemsg" class="welcome"></p>
+<script>
+function greet() {
+var date = new Date();
+var time = date.getHours();
+var custom_greeting;
+
+if (time < 12) {
+	custom_greeting = "Good Morning";
+	}
+if (time >= 12 && time < 18) {
+	custom_greeting = "Good Afternoon";
+	}
+if (time >= 18) {
+	custom_greeting = "Good Evening";
+	}
+fname = localStorage.getItem("firstname");
+
+if (fname == null || fname == " ") {
+document.getElementById("welcomemsg").innerHTML =custom_greeting + " " + "visitor" + "!";}
+
+	
+	/*alert(custom_greeting + " " + "visitor" + "!"); }*/
+else 
+{
+document.getElementById("welcomemsg").innerHTML =custom_greeting + " " + fname + "!";
+}
+	/*alert(custom_greeting + " " + fname + "!"); }*/
+
+}
+</script>
+<div class="container_12">
+<div id="header" class="grid_12">
+	<img  class="grid_4" id="logo" src="images/logo.png" alt="logo" height="150">
+ 	<img  class="grid_7" id="name" src="images/name3.png" alt="logo"  >
+	
+	</div>
+	
+	
+	
+	
+	
+		
+		<div id="navbar" class="grid_12">
+	<ul>
+		<li><a class="active" >Home</a></li>
+	
+		<li><a href="aboutus.html">About Us</a></li>
+		<li><a href="faq.html">FAQ</a></li>
+         <li><a href="nutrition.html">Nutrition</a></li>
+		 <li><a href="faceyoga.html">Faceyoga</a></li>
+		 <li><a href="exercise.html">Exercise</a></li>
+		 <li><a href="game1.html">Game</a></li>
+		
+	</ul> 
+	</div>
+		
+		
+	<div>
+	<p id="Printheading1">Healthy Life Style</p>
+	</div>
+<div id="article" class="grid_12">
+<h2 class="welcome"><b>Welcome to Healthy Life style!!</b></h2>
+	<strong class="welcome">
+	WHAT YOU EAT AND PRACTISE REFLECTS IN YOUR HEALTH
+		</strong>
+	
+	<p id="para1">How can I stay healthy?What should I eat?What are healthy habits?What are exercises that will make me fit?
+	Have all such questions?No worries.Here we will discuss all these problems and their solutions.Bringing small changes
+	in your eating habits and daily routine can make huge differences to the way you live your life.Here is our effort to 
+	spread awareness in you about health and fitness.You just have to make some dedicated efforts for this.
+	 So get ready to be the change and make your life beautiful.
+	</p>
+	
+	</div>
+	
+
+<div id="graphical_nav" class="grid_12">
+	
+<a>
+<img  class="nav-images" src="images/salmon.jpeg" alt="null"  ><!--Source https://www.pexels.com/photo/brown-fish-fillet-on-white-ceramic-plate-46239/>-->
+
+</a>
+
+
+
+	
+<a>
+<img class="nav-images"  src="images/faceyoga.jpg" alt="null" ><!--https://www.pexels.com/photo/relaxation-relaxing-meditation-yoga-12344/-->
+
+</a>
+	
+<a>
+<img  class="nav-images" src="images/beauty.jpg" alt="Beaty Tips"><!--sorce https://www.pexels.com/photo/woman-doing-yoga-near-the-sea-during-daytime-102623/-->
+
+</a>
+	
+<a>
+<img class="nav-images"  src="images/yoga.jpeg" alt="Yoga"><!--sorce https://www.pexels.com/photo/woman-doing-yoga-near-the-sea-during-daytime-102623/-->
+
+</a>
+	
+</div>
+
+<div id="space-bar" class="grid_12">
+
+</div>
+	<div id="footerbar" class="grid_12">
+	<ul>
+		<li><a href="contactus.html" >Contact US</a></li>
+	
+		<li><a href="links.html">Links</a></li>
+		<li><a href="privacy.html">PrivacyPolicy</a></li>
+         
+		<li><a href="mysitemap.html">Sitemap</a></li>
+		<li><a href="future.html">Future</a></li>
+			
+	</ul> 
+	
+	<ul class="sociallinks">
+						   <li><iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Ftowsonuniversity%2F&width=50&layout=button&action=like&size=small&show_faces=false&share=false&height=65&appId" width="50" height="20" style="border:none;overflow:hidden"></iframe></li>
+						   <li><a target="_blank" class="twitter-share-button" href="https://twitter.com/intent/tweet?text=Great%20website&url=https%3A%2F%2Ftowson.edu&via=twitterdev&hashtags=university&related=twitterapi%2Ctwitter"> Twitter</a></li>
+						   <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+						   <li><a target="_blank" class="fa fa-instagram" href="https://www.instagram.com/towsonuniversity/"></a></li>
+						 </ul>
+						 </div>
+						 <div id="printsocialmedia">
+	
+	<a target="_blank" class="fa fa-instagram" href="https://www.instagram.com/towsonuniversity/"></a> <br>
+	
+	<a target="_blank" class="fa fa-facebook" href="https://www.facebook.com/towsonuniversity/"></a><br>
+	<a target="_blank" class="fa fa-twitter" href="https://www.twitter.com/TowsonU/"></a>
+
+	</div>
+	
+	
+	<div id="printMsg">
+	<p>
+	<strong>“Thank you for visiting  HealthyLifestyle.com and printing this article” </strong>
+	</p>
+	</div>
+	
+	<div id="validationimage">
+<p>
+      <a href="http://validator.w3.org/check?uri=referer"><img
+          src="http://www.w3.org/Icons/valid-xhtml10"
+          alt="Valid XHTML 1.0!" height="31" width="88" /></a>
+    </p>
+</div>
+ <div id="footer" class="grid_12">
+ 
+ 
+ 
+<p><b>email:enquire&#64;healthylife.com</b></p>
+  <p><b>Copyright &#169;Helathy Life Style.com</b></p>
+  
+ 
+</div>
+
+
+</div>
+</body>
+</html> 

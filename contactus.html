@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="This page is contact us page of HealthyLifeStyle.com">
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1">
+<link href="unsemancss/unsemantic-grid-responsive.css" rel="stylesheet"/><!--Unsemantic  Grid Framework-->
+	<link href="css/style.css" rel="stylesheet"/> <!--style sheet for padding,colour and other css rules-->
+	<link rel="shortcut icon" href="images/favicon.ico"><!---favicon>-->
+	<link href="print.css" rel="stylesheet" media="print"/>
+	<link href="css/style.css" rel="stylesheet" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+<title>
+Contact Helathy Life Style
+</title>
+
+<script>
+function rechangeborder()
+		{
+		var otherstextbox=document.getElementById("otherstxt").value;
+		
+		if(otherstextbox!="")
+		{
+		
+		
+		errormsgother.textContent='';
+		document.getElementById('otherstxt').style.removeProperty('border');
+popupfunction();
+		}
+		}
+function popupfunction()
+{
+var test1=validatefname();
+if(test1==false)
+{
+
+//alert('Please enter mandatory Fields!');
+//document.getElementById("fname").focus();
+}
+else{
+var test=othercheck();
+
+if(test==true)
+
+{
+errormsgother.textContent='';
+		document.getElementById('otherstxt').style.removeProperty('border');
+alert("Thank You!Message Submitted successfully!!We will Get Back to you soon");
+location.reload();
+}
+else
+{
+document.getElementById("otherstxt").focus();
+		document.getElementById("otherstxt").style.border = "thick solid pink";
+	errormsgother.textContent='Please mention other source';
+	
+}
+}
+}
+</script>
+<style>
+.error(color:red)
+</style>
+</head>
+
+<body>
+<div class="grid-container">
+<div id="header" class="grid-100 mobile-grid-100">
+	<img  class="grid-20" id="logo" src="images/logo.png" alt="logo" height="140">
+ 	<img  class="grid-80" id="name" src="images/name3.png" alt="logo" height="140" >
+	</div>
+	<div id="navbar" class="grid-100">
+	<ul>
+		<li><a href="home.html">Home</a></li>
+	
+		<li><a href="http://ait616.com/nshiro2/project2/aboutus.html">About Us</a></li>
+		<li><a href="faq.html">FAQ</a></li>
+         <li><a href="nutrition.html">Nutrition</a></li>
+		 <li><a href="faceyoga.html">Faceyoga</a></li>
+		<li><a href="exercise.html">Exercise</a></li>
+		 <li><a href="game1.html">Game</a></li>
+		
+	</ul> 
+	
+	
+	</div>
+	<!--content-->
+	
+<div id="content"  class="clearfix">
+    <div class="grid-100 ">
+        
+	  <h2>Contact Us</h2>
+     
+	  <p>For all your querries contact me, please fill the contact form below. <br/>
+        I will post solutions for your problems as soon as possible. Thank you!</p>
+      <br/>
+	
+	
+     
+    </div>
+	<div> <img  id="contactimage" src="images/contactus2.jpg" alt="Contact Image"  ></div>
+    <!--End grid-12--><!--action="mailto:schooc1@students.towson.edu"-->
+    <div class="grid-80 prefix-1 suffix-1">
+      <form id="contactFrom" name="contactFrom" onsubmit="popupfunction()" method="post"  >
+	  
+	
+        <fieldset>
+          <legend id="contact-legend">Contact Form</legend>
+          <div>
+            <label>First Name<span style="color:red;">&#42;</span></label>
+            <input  type="text" id="fname" name="fname" maxlength="20" size="25" onblur="validatefname()" />
+			
+           
+			<div  style="color:red;font-weight:bold;float:right;" id="fnameerrormsg"></div>
+          </div>
+		  
+          <div>
+            <label>Last Name<span style="color:red;">&#42;</span></label>
+            <input  type="text" id="lname" name="lname" maxlength="40" size="25" onblur="validatelname()" />
+         
+			<div  style="color:red;font-weight:bold;float:right;" id="lnameerrormsg"></div>
+          </div>
+		   <div>
+            <label>Gender</label>
+            Male
+            <input type="radio" name="credit" id="male" value="male" accesskey="f" />
+            Female
+            <input type="radio" name="credit" id="female" value="female" accesskey="b" />
+            Others
+            <input type="radio" name="credit" id="other" value="other" accesskey="o" />
+          </div>
+          <div>
+            <label>Email<span style="color:red;">&#42;</span></label>
+            <input  type="email" id="email" name="email" maxlength="50" size="25" placeholder="ashwin@gmail.com" onblur="validateEmail()"/>
+			<div  style="color:red;font-weight:bold;float:right;" id="emailrrormsg" ></div>
+			
+             <div class="whitespace"></div>
+          </div>
+          <div>
+            <label>Telephone Number </label>
+            <input  type="tel" name="telephone" id="telephone" placeholder="0000000000" maxlength="20" size="15" onblur="validatePhoneNumber()"/>
+			<div  style="color:red;font-weight:bold;float:right;" id="phonerrormsg" ></div>
+			<div class="whitespace"></div>
+
+          </div>
+          <br/>
+          <div>
+            <label for="topic">Please choose a subject.</label>
+            <select name="topic" id="topic" >
+              <option value="" selected>Select&#8230;</option>
+              <option value="Yoga">Yoga</option>
+              <option value="FaceYoga">FaceYoga</option>
+			  <option value="BeautyTips">BeautyTips</option>
+              <option value="Nutrition">Nutrition</option>
+            </select>
+            <div class="whitespace"></div><div class="er-message" id="errorMessageTopic"></div>
+          </div>
+		   <div>
+            <label>Comments</label>
+            <textarea  class="required" name="comments" maxlength="500" cols="35" rows="10" id="comments" placeholder="Type your comment here&#8230;"></textarea>
+             <div class="whitespace"></div>
+          </div>
+          <div>
+            <label>How did you hear about Healthy Life style.com?</label>
+            Friend
+            <input type="radio" name="credit" id="friend" value="friend" accesskey="f" />
+            Facebook
+            <input type="radio" name="credit" id="fackbook" value="fackbook" accesskey="b" />
+            Others
+            <input type="radio" name="credit" id="othersradio" value="others" accesskey="o" />
+          </div>
+          <div>
+            <label>If you select "Others", please type your specific answer here.</label>
+            <input  type="text" name="other" id="otherstxt" maxlength="40" size="25" onblur="rechangeborder()">
+			<div  style="color:red;font-weight:bold;float:right;" id="errormsgother" ></div>
+			
+          </div>
+         
+          <div>
+            <div class="whitespace"></div>
+            <input type="checkbox" name="subscribe" checked="checked" />
+            Email me about new updates from HealthyLife Style.com<br/>
+          </div>
+          <div>
+            <div class="whitespace"></div>
+            <button type="button" id="buttons"  class="in-shadow" onclick="popupfunction()">Submit</button>
+			<button type="reset" id="buttonr"  class="in-shadow">Reset</button>
+            
+          </div>
+        </fieldset>
+		<div id="contacts">
+		&#9993;enquire@healthylife.com <br>
+		&#9990; 139-0555-8999
+		</div>
+		<script>
+		
+		function othercheck()
+		{
+		
+		var radio=document.getElementById("othersradio").checked;
+		
+		
+		if(document.getElementById("othersradio").checked)
+		{
+		
+		var otherstextbox=document.getElementById("otherstxt").value;
+		
+		
+		
+		if( otherstextbox==''|| otherstextbox ==null)
+		{
+			return false;
+		
+		}
+		else
+		{
+		
+		return true;
+		}
+		
+		}
+		return true;
+		}
+		  function validatefname()
+{
+
+var userfname=document.getElementById('fname');
+var errormsgfname=document.getElementById('fnameerrormsg');
+if (userfname.value == null || userfname.value == "") {
+
+     // 	document.contactFrom.fname.focus() ;
+		document.getElementById("fname").focus();
+		document.getElementById("fname").style.border = "thick solid pink";
+	errormsgfname.textContent='Please Enter User Name';
+		return false;
+		
+    	}
+    else {
+	errormsgfname.textContent='';
+	document.getElementById('fname').style.removeProperty('border');
+	if (typeof(Storage) !== "undefined") {
+		localStorage.setItem("firstname", contactFrom.fname.value);
+		}
+		return true;
+	}
+}
+
+function validatelname()
+{
+
+var userfname=document.getElementById('lname');
+var errormsglname=document.getElementById('lnameerrormsg');
+if (userfname.value == null || userfname.value == "") {
+
+     // 	document.contactFrom.fname.focus() ;
+		document.getElementById("lname").focus();
+		document.getElementById("lname").style.border = "thick solid pink";
+	errormsglname.textContent='Please Enter Last Name';
+		
+		
+    	}
+    else {
+	errormsglname.textContent='';
+	document.getElementById('lname').style.removeProperty('border');
+	if (typeof(Storage) !== "undefined") {
+		localStorage.setItem("lastname", contactFrom.lname.value);
+		}
+	}
+}
+
+function validateEmail() {
+
+var errormsgemail=document.getElementById('emailrrormsg');
+
+	var emailID = document.getElementById('email').value;
+	
+      	atpos = emailID.indexOf("@");
+      	dotpos = emailID.lastIndexOf(".");
+         
+      	if (atpos < 1 || ( dotpos - atpos < 2 )) 
+      	{
+        		
+           document.getElementById("email").focus();
+            document.getElementById("email").style.border = "thick solid pink";
+            errormsgemail.textContent='Please Enter Correct Email Id';
+         }
+		 else
+		 {
+		 errormsgemail.textContent='';
+		 document.getElementById('email').style.removeProperty('border');
+		 }
+}
+
+function validatePhoneNumber(){
+var userphone=document.getElementById('telephone');
+var errormsgphone=document.getElementById('phonerrormsg');
+
+
+
+  var phoneno = /^\d{10}$/;
+  if(userphone.value.match(phoneno)&& userphone.value!=''&& userphone.value!=null)
+        {
+		errormsgphone.textContent='';
+		
+  document.getElementById('telephone').style.removeProperty('border');
+		
+      return true;
+        }
+      else
+        {
+        document.getElementById("telephone").focus();
+            document.getElementById("telephone").style.border = "thick solid pink";
+            errormsgphone.textContent='Please Enter Correct Phone number';
+       
+        }
+
+
+}
+
+</script>
+      </form>
+	  <div id="validationimage">
+<p>
+      <a href="http://validator.w3.org/check?uri=referer"><img
+          src="http://www.w3.org/Icons/valid-xhtml10"
+          alt="Valid XHTML 1.0!" height="31" width="88" /></a>
+    </p>
+</div>
+    </div>
+	
+	
+	
+	
+	
+  </div>
+  
+	
+	
+	
+<div id="space-bar" class="grid-100">
+
+</div>
+	<div id="footerbar" class="grid-100">
+	<ul>
+		<li><a class="active" >Contact US</a></li>
+	
+		<li><a href="links.html">Links</a></li>
+		<li><a href="privacy.html">PrivacyPolicy</a></li>
+         <li><a href="mysitemap.html">Sitemap</a></li> 
+		 <li><a href="future.html">Future</a></li>
+		
+	</ul> 
+	<ul class="sociallinks">
+						   <li><iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Ftowsonuniversity&width=95&layout=button&action=like&show_faces=true&share=true&height=65&appId" width="95" height="20" style="border:none;overflow:hidden"></iframe> <!--scrolling="no" frameborder="0" allowTransparency="true"--></li>
+						   <li><a target="_blank" class="twitter-share-button" href="https://twitter.com/intent/tweet?text=Great%20website&url=https%3A%2F%2Ftowson.edu&via=twitterdev&hashtags=university&related=twitterapi%2Ctwitter"> Twitter</a></li>
+						   <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+						   <li><a target="_blank" class="fa fa-instagram" href="https://www.instagram.com/towsonuniversity/"></a></li>
+						 </ul>
+	</div>
+	<div id="printsocialmedia">
+	
+	<a target="_blank" class="fa fa-instagram" href="https://www.instagram.com/towsonuniversity/"></a> <br>
+	
+	<a target="_blank" class="fa fa-facebook" href="https://www.facebook.com/towsonuniversity/"></a> <br>
+	<a target="_blank" class="fa fa-twitter" href="https://www.twitter.com/TowsonU/"></a>
+
+	</div>
+	<div id="printMsg">
+	<p>
+	<strong>“Thank you for visiting  HealthyLifestyle.com and printing this article” </strong>
+	</p>
+	</div>
+	
+	
+ <div id="footer" class="grid-100">
+ 
+ 
+ 
+<p><b>email:enquire&#64;healthylife.com</b></p>
+  <p><b>Copyright &#169;Helathy Life Style.com</b></p>
+  
+ 
+</div>
+
+	
+</div>
+</body>
+</html>

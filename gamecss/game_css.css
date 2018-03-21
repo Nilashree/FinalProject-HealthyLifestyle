@@ -1,0 +1,67 @@
+body {
+  /*background: black;
+  font-family: monospace;
+  text-align: center;
+  font-size: 1.5rem;
+  position: relative;*/
+}
+
+#icons_div
+{
+	display:inline;
+	position:relative;
+	left:35%;
+	top:90%;
+
+}
+.icons
+{
+	padding:10px;
+}
+
+.icons:hover {
+  transform: scale(1.4);
+  transition: all 1s;
+}
+
+.container1 {
+	 background:#F0E68C;
+	margin-left:8%;
+	margin-right:8%;
+  /*position: absolute;
+  top: 110%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-height: 400px;*/
+}
+
+
+#titleimage
+{
+	position:absolute;
+	left:34%;
+	height:12%;
+}
+#contentpara
+{
+	text-align:center;
+}
+h2
+{
+	text-align:center;
+	padding-top:9%;
+}
+h3,h4
+{
+	text-align:center;
+	
+	
+
+
+}
+
+.game_list
+	{
+	padding-left:20%;
+	margin:0 aoto;
+	}

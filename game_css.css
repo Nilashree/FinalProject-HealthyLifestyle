@@ -1,0 +1,25 @@
+body {
+  background: black;
+  font-family: monospace;
+  text-align: center;
+  font-size: 1.5rem;
+  position: relative;
+}
+
+.icons {
+  padding: 10px;
+}
+
+.icons:hover {
+  transform: scale(1.4);
+  transition: all 1s;
+}
+
+.container {
+	 background: #F0E68C;
+ /* position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-height: 400px;*/
+}
